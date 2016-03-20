@@ -1,0 +1,4 @@
+The mod is in your mods folder.
+
+Yamst statistic gathering is anonymous.
+You can opt out of Yamst statistics gathering.
