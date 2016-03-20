@@ -1,0 +1,97 @@
+This is a list of all, or most optional mods distributed with in QubeSpace 0.3.0
+
+
+Client (these mods can only be installed on a client):
+
+ArmorStatus HUD:
+This mod permanently renders your armour and their damage left values and the number of items in your inventory or the damage value of the item in your hand near the edge of your Minecraft window. Meant to keep an eye on when your items will break or run out.
+It needs Bspkrs Core, a mod that will be automatically downloaded, to work.
+
+BetterTitleScreen:
+Configured to show the QubeSpace welcome message on your title screen
+
+Damage Indicators:
+If you look at a mob that is close enough to you in-game, this mod will show you its health points, name and mob type (hostile, friendly etc.) in a neat-looking GUI.
+
+Forge Essentials Client:
+This mod is only useful if Forge Essentials is installed on the server you are connecting to. If you have a high Forge Essentials permission level on the server, in other words: you are the owner, an OP or an Admin, your client can communicate with Forge Essentials more easily.
+
+INPure Core:
+This mod shrinks the number of pages in NEI by hiding duplicate items such as Spawn eggs, monster spawners, Forge Multiparts and several types of Mod-added covers and only showing one copy of each of these in NEI. This is a blessing when playing in Survival, but for creative builders who like to use lots of Forge Multiparts, this is an absolute curse.
+
+JourneyMap:
+This mod adds a minimap, worldmap, waypoint system, cave mapping and mob radar.
+This mod can also broadcast its real-time map on the internet, so people can see it in their web-browser.
+
+LookingGlass:
+This is an API that automatically loads the chunks of and displays the location a portal leads to.
+Currently this API only used by Mystcraft, so no vanilla or other modded portals are rendered like this.
+
+MumbleLink:
+This mod sends your in-game positional data to other applictations like Mumble and the Teamspeak Crosstalk plugin to make position based stereo and distance based volume in these voice-chatboxes possible. 
+
+Not Enough Keys:
+This mod automatically sorts keybinding conflicts out of your keybinding configs. It also creates separate controls-menu's for mods that support it.
+
+StatusEffect HUD:
+This mod renders the status effects that you have and their time left near the edge of your Minecraft window.
+It needs Bspkrs Core, a mod that will be automatically downloaded, to work.
+
+TiC Tooltips:
+This shows information about the traits of the tools and toolparts added by Tinkers' Construct and its addons, like durability, extra modifiers, damage and mining speed.
+
+Voxelmap:
+This mod adds a minimap, worldmap, waypoint system, cave mapping and mob radar.
+This mod is a Litemod and the one and only reason that the Litemod modloader is installed on this pre-configured launcher.
+
+Render Player API (Enhancer):
+This mod makes the rendering of player models, especially the ones added by Smart Moving/Render, render smoother and behave better in combination with other mods.
+
+
+
+
+
+Both (these mods can be installed on a client, a server, or both, unless stated otherwise):
+
+AromaBackup:
+By default, this mod is configured to make a backup of your world once every half hour.
+It will do so until eternity.
+This needs AromaCore to work.
+
+Fastcraft:
+This mod will speed up and optimize memory user for your server and client and for clients, it will also optimize rendering.
+Sadly, this mod is incompatible with Forge Essentials Server.
+
+Inventory Tweaks:
+This mod adds various ways to quicksort the contents of your or any chest-like inventory using keyboard- or clickable buttons in the inventory gui. It also adds the ability to precisely or wuickly transfer all items from one inventory to another.
+Installing this mod on your server does make its client-sided functionality a bit smoother, but it may cause client sided crashes, server kicks or other issues.
+
+MineTweaker:
+This mod adds a way to program rules to enable/disable crafting recipes and a lot more on a client or server in the form of scripts.
+This mod has to be installed on the client to connect to a server with this mod.
+
+OpenEye:
+This mod connects to an online repository of known crashes, whenever your client/server crashes in an attempt to find a match. If it finds a match it will give you a link to the crash's page. This page may contain information that can help you or us to find the cause of the crash and deal with it.
+
+Opis:
+This mod provides and interface, accessed by the "/opis" command in which you can see how much memory and lag, mods, entities and tile-entities, are using and causing. if this mod is installed on server and client, the client can be used to monitor the server.
+This mod integrates MapWriter, a client-sided mod that adds a minimap, worldmap, a waypoint system and cavemapping. Within Opis, this mod is also able to teleport OPs, show how many entities are in what chunks, find slimechunks and show you what chunks are using the most memory.
+
+Waila:
+If you look at blocks or entities in-game or in your inventory, this mod will show you all kinds of details, like what mod it is from, about it.
+
+
+
+
+
+Server:
+
+Dynmap:
+This mod generates a world map for all generated chunks and will broadcast it on the internet. This real-time map can be viewed in your web-browser.
+
+Forge Essentials:
+This mod adds lots of admin content to make a Forge server Bukkit-like. It can assign pieces of land to people, so they can not be grieved by others, restrict certain or all commands and, for instance, restrict guests to a server from accessing the use of tnt and other explosives. It has much more content though.
+This mod includes WorldEdit Forge, a mod with which you can, among other things, cut, copy, paste and swap out fragments of your Minecraft world, multiworld and a worldborder.
+
+JourneyMap Server:
+This mod controls what clients connected to the server can see with JourneyMap. It can, for instance, restrict cave mapping and the mob radar functions.
