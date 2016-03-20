@@ -1,0 +1,892 @@
+<!--
+This is the user configurable SAG Mill recipe file. This file will not be modified or removed by EnderIO.
+
+Adding new Recipes:
+For details of how to add a new recipe please see the documentation at the top of SAGMillRecipes_Core.xml.
+
+Removing Recipes:
+To disable all recipes within a group, in this example Forestry, include the following in this file:
+
+<recipeGroup name="Forestry" enabled="false"/>
+
+To disable individual recipes, simply provide an invalid recipe for them:
+
+<recipeGroup name="Applied Energistics">
+  <recipe name="CertusQuartzOre"/>
+</recipeGroup>
+
+To change an existing recipe, just add the recipe to this file using the same recipe group and recipe name as
+found in the core file.
+ 
+-->
+
+<SAGMillRecipes>
+
+<!-- Disables all recipes in the group 'Vanilla'
+<recipeGroup name="Vanilla" enabled="false"/> 
+-->
+
+<!-- Uncomment this block to change the default TE obsidian -> dust recipe to the railcraft recipe.  
+  <recipeGroup name="Thermal Expansion">
+  
+    <recipe name="Obsidian" energyCost="400">
+      <input>
+        <itemStack itemID="49" />
+      </input>      
+      <output>
+        <itemStack modID="Railcraft" itemName="tile.railcraft.cube" itemMeta="4" number="1" />
+      </output>
+      <output>
+        <itemStack oreDictionary="dustObsidian" number="1" chance="0.15" />
+      </output>
+      <output>
+        <itemStack oreDictionary="dustObsidian" number="1" chance="0.025" />
+      </output>
+    </recipe>
+    
+</recipeGroup> 
+-->
+
+<!-- Disables the glass recipes in the group 'Vanilla' 
+<recipeGroup name="Vanilla"> 
+  <recipe name="Glass"/> 
+</recipeGroup>
+-->
+
+
+<!-- Modify a core recipe defination, in this case, make glass give diamonds. 
+<recipeGroup name="Vanilla">
+  <recipe name="Glass" energyCost="120"> 
+      <input>
+        <itemStack itemID="20" />
+      </input>
+      <output>
+        <itemStack itemID="264" />
+      </output>
+    </recipe>
+</recipeGroup>
+-->
+
+<!-- Adding a new recipe to a new group 
+<recipeGroup name="CrazyPantsGroup">
+  <recipe name="SolarToGlass" energyCost="120"> 
+      <input>
+        <itemStack modID="EnderIO" itemName="enderIO:blockSolarPanel"/>
+      </input>
+      <output>
+        <itemStack itemID="20" />
+      </output>
+    </recipe>
+</recipeGroup>
+-->
+
+<!-- Adding a new grinding ball  
+  <grindingBalls>  
+    <grindingBall id="Diamond" grindingMultiplier="1.5" chanceMultiplier="2" powerMultiplier="0.5" durationRF="50000">
+      <itemStack modID="minecraft" itemName="diamond"/>
+    </grindingBall>
+  </grindingBalls>
+  -->
+
+<!-- - Removing an existing grinding ball:
+  <grindingBalls>
+    <grindingBall id="Flint" remove="true" />
+  </grindingBalls>
+ -->  
+ 
+ <!-- - Modifiying the excludes list: (removing glowstone, adding sand)
+  <grindingBalls>
+    <excludes>
+      <itemStack modID="minecraft" itemName="glowstone" remove="true" />
+      <itemStack modID="minecraft" itemName="sand" />
+    </excludes>
+  </grindingBalls>
+ --> 
+<recipeGroup name="Additional Dense Ores" >
+    <recipe name="Dense Yellorite Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreYellorite" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreYellorite" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Apatite Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreApatite" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreApatite" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Sulfur Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreSulfur" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreSulfur" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Saltpeter Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreSaltpeter" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreSaltpeter" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Firestone Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreFirestone" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreFirestone" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Poor Iron Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseorePoorIron" />
+      </input>
+      <output>
+        <itemStack oreDictionary="orePoorIron" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Poor Gold Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseorePoorGold" />
+      </input>
+      <output>
+        <itemStack oreDictionary="orePoorGold" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Poor Copper Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseorePoorCopper" />
+      </input>
+      <output>
+        <itemStack oreDictionary="orePoorCopper" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Poor Tin Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseorePoorTin" />
+      </input>
+      <output>
+        <itemStack oreDictionary="orePoorTin" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Poor Lead Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseorePoorLead" />
+      </input>
+      <output>
+        <itemStack oreDictionary="orePoorLead" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Cinnabar Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreCinnabar" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreCinnabar" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Air Infused Stone" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreInfusedAir" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreInfusedAir" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Fire Infused Stone" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreInfusedFire" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreInfusedFire" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Water Infused Stone" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreInfusedWater" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreInfusedWater" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Earth Infused Stone" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreInfusedEarth" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreInfusedEarth" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Order Infused Stone" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreInfusedOrder" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreInfusedOrder" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Entropy Infused Stone" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreInfusedEntropy" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreInfusedEntropy" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Amber Bearing Stone" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreAmber" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreAmber" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Copper Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreCopper" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreCopper" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Tin Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreTin" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreTin" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Silver Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreSilver" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreSilver" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Lead Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreLead" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreLead" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Ferrous Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNickel" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNickel" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Shiny Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseorePlatinum" />
+      </input>
+      <output>
+        <itemStack oreDictionary="orePlatinum" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Mana Infused Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreMithril" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreMithril" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Cobalt Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreCobalt" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreCobalt" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Ardite Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreArdite" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreArdite" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Coal Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherCoal" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherCoal" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Diamond Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherDiamond" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherDiamond" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Gold Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherGold" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherGold" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Iron Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherIron" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherIron" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Lapis Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherLapis" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherLapis" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Redstone Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherRedstone" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherRedstone" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Copper Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherCopper" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherCopper" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Tin Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherTin" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherTin" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Emerald Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherEmerald" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherEmerald" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Silver Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherSilver" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherSilver" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Lead Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherLead" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherLead" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Uranium Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherUranium" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherUranium" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Nikolite Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block3" itemMeta="4"/>
+      </input>
+      <output>
+		<itemStack modID="NetherOres" itemName="block0" itemMeta="12" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Nether Ruby Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherRuby" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherRuby" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Peridot Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherPeridot" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherPeridot" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Sapphire Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherSapphire" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherSapphire" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Platinum Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherPlatinum" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherPlatinum" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Ferrous Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherNickel" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherNickel" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Pig Iron Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherSteel" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherSteel" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Iridium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block3" itemMeta="11"/>
+      </input>
+      <output>
+		<itemStack modID="NetherOres" itemName="block1" itemMeta="3" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Nether Osmium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block3" itemMeta="12"/>
+      </input>
+      <output>
+		<itemStack modID="NetherOres" itemName="block1" itemMeta="4" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Nether Sulfur Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherSulfur" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherSulfur" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Titanium Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherTitanium" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherTitanium" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Mithril Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherMithril" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherMithril" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Adamantium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block4" itemMeta="0"/>
+      </input>
+      <output>
+		<itemStack modID="NetherOres" itemName="block1" number="8" />
+      </output>
+    </recipe>
+	<recipe name="Dense Rutile Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block4" itemMeta="1"/>
+      </input>
+      <output>
+		<itemStack modID="NetherOres" itemName="block1" number="9" />
+      </output>
+    </recipe>
+	<recipe name="Dense Nether Tungsten Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherTungsten" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherTungsten" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Amber Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherAmber" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherAmber" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Tennantite Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block4" itemMeta="4"/>
+      </input>
+      <output>
+		<itemStack modID="NetherOres" itemName="blcck1" number="12" />
+      </output>
+    </recipe>
+	<recipe name="Dense Nether Salt Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherSalt" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherSalt" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Saltpeter Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreNetherSaltpeter" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreNetherSaltpeter" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Nether Magnesium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block4" itemMeta="7"/>
+      </input>
+      <output>
+		<itemStack modID="NetherOres" itemName="block1" number="15" />
+      </output>
+    </recipe>
+	<recipe name="Dense Uranium Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreUranium" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreUranium" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Teslatite Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreTeslatite" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreTeslatite" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Zinc Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreZinc" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreZinc" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Tungsten Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreTungsten" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreTungsten" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Certus Quartz Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block4" itemMeta="12"/>
+      </input>
+      <output>
+		<itemStack modID="appliedenergistics2" itemName="tile.OreQuartz" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Charged Certus Quartz Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block4" itemMeta="13"/>
+      </input>
+      <output>
+		<itemStack modID="appliedenergistics2" itemName="tile.OreQuartzCharged" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Quantum Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block5" itemMeta="4"/>
+      </input>
+      <output>
+		<itemStack modID="qCraft" itemName="ore" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Vinteum Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreVinteum" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreVinteum" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Chimerite Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreChimerite" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreChimerite" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Blue Topaz Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreBlueTopaz" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreBlueTopaz" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Moonstone Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreMoonstone" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreMoonstone" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Sunstone Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreSunstone" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreSunstone" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Naquadah Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block6"/>
+      </input>
+      <output>
+		<itemStack modID="SGCraft" itemName="naquadahOre" number="4" />
+      </output>
+    </recipe>
+	<recipe name="Dense Draconium Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreDraconium" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreDraconium" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Desh Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreDesh" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreDesh" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Ilmenite Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block6" itemMeta="13"/>
+      </input>
+      <output>
+		<itemStack modID="GalacticraftMars" itemName="tile.asteroidsBlock" itemMeta="4" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Cheese Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreCheese" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreCheese" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Aluminum Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreAluminum" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreAluminum" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Silicon Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreSilicon" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreSilicon" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Quontonium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block7" itemMeta="4"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="diona_block" itemMeta="4" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Fronisium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block7" itemMeta="5"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="diona_block" itemMeta="5" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Palladium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block7" itemMeta="13"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="polongnius_block" itemMeta="7" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Flonium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block7" itemMeta="14"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="polongnius_block" itemMeta="8" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Purple Crystal Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block7" itemMeta="15"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="polongnius_block" itemMeta="9" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Ichorius Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block8" itemMeta="0"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="nibiru_block" itemMeta="4" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Norium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block8" itemMeta="1"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="nibiru_block" itemMeta="5" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Red Gem Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block8" itemMeta="4"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="nibiru_block" itemMeta="8" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense White Crystal Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block8" itemMeta="7"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="koentus_block" itemMeta="6" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense EMP Crystal Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block8" itemMeta="8"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="koentus_block" itemMeta="7" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Bacterial Fossil Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block8" itemMeta="9"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="koentus_block" itemMeta="8" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Mineral Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block9" itemMeta="0"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="fronos_block" itemMeta="8" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Black Diamond Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block9" itemMeta="1"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="fronos_block" itemMeta="9" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Iridium Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreIridium" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreIridium" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Namerium Crystal Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block9" itemMeta="7"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="kapteyn-b_block" itemMeta="4" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Frozen Iron Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreFrozenIron" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreFrozenIron" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Sirius Glowstone Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block9" itemMeta="15"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="sirius_block" itemMeta="6" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Metal Meteoric Iron Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreMetalMeteor" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreMetalMeteor" number="4" />
+      </output>
+	</recipe>
+		<recipe name="Dense Meteoric Iron Ore" energyCost="2400" >
+      <input>
+        <itemStack oreDictionary="denseoreMeteor" />
+      </input>
+      <output>
+        <itemStack oreDictionary="oreMeteor" number="4" />
+      </output>
+	</recipe>
+	<recipe name="Dense Xeonium Ore" energyCost="2400" >
+      <input>
+        <itemStack modID="denseores" itemName="block10" itemMeta="15"/>
+      </input>
+      <output>
+		<itemStack modID="MorePlanet" itemName="pluto_block" itemMeta="7" number="4" />
+      </output>
+	</recipe>
+</recipeGroup>
+
+</SAGMillRecipes>

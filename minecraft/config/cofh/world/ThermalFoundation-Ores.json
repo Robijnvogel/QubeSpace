@@ -1,0 +1,303 @@
+{
+    "copper": {
+        "template": "uniform",
+        "block": [
+			{"name": "bluepower:copper_ore", "weight":50},
+			{"name": "Forestry:resources", "metadata": 1, "weight":50},
+			{"name": "GalacticraftCore:tile.gcBlockCore", "metadata": 5, "weight":50},
+			{"name": "IC2:blockOreCopper", "weight":50},
+			{"name": "ImmersiveEngineering:ore", "weight":50},
+			{"name": "TConstruct:SearedBrick", "metadata": 3, "weight":50},
+			{"name": "ThermalFoundation:Ore", "weight":50},
+			{"name": "Railcraft:ore", "metadata": 9, "weight":100}
+		],
+        "clusterSize": 8,
+        "numClusters": 10,
+        "minHeight": 40,
+        "maxHeight": 75,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -60,
+			-59,
+			-58,
+			-57,
+			-56,
+			-53,
+			-52,
+			-49,
+			-48,
+			-47,
+			-46,
+			-45,
+			-44,
+			-43,
+			-30,
+			-29,
+			-28,
+			-1,
+            1
+        ]
+    },
+    "tin": {
+        "template": "uniform",
+        "block": [
+			{"name": "Forestry:resources", "metadata": 2, "weight":50},
+			{"name": "GalacticraftCore:tile.gcBlockCore", "metadata": 6, "weight":50},
+			{"name": "IC2:blockOreTin", "weight":50},
+			{"name": "TConstruct:SearedBrick", "metadata": 4, "weight":50},
+			{"name": "ThermalFoundation:Ore", "metadata": 1, "weight":50},
+			{"name": "Railcraft:ore", "metadata": 10, "weight":100}
+		],
+        "clusterSize": 8,
+		"numClusters": 8,
+        "minHeight": 20,
+        "maxHeight": 55,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -60,
+			-59,
+			-58,
+			-57,
+			-56,
+			-53,
+			-52,
+			-49,
+			-48,
+			-47,
+			-46,
+			-45,
+			-44,
+			-43,
+			-30,
+			-29,
+			-28,
+			-1,
+            1
+        ]
+    },
+    "silver": {
+        "template": "uniform",
+        "block": [
+            {"name": "bluepower:silver_ore", "metadata": 0, "weight":50},
+			{"name": "factorization:ResourceBlock", "metadata": 0, "weight":50},
+            {"name": "ImmersiveEngineering:ore", "metadata": 3, "weight":50},
+			{"name": "ThermalFoundation:Ore", "metadata": 2, "weight":50},
+			{"name": "IC2:blockOreLead", "metadata": 0, "weight":10},
+			{"name": "ImmersiveEngineering:ore", "metadata": 2, "weight":10},
+			{"name": "Railcraft:ore", "metadata": 11, "weight":20},
+			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight":10}
+			
+        ],
+        "clusterSize": 8,
+        "numClusters": 6,
+        "minHeight": 5,
+        "maxHeight": 30,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -60,
+			-58,
+			-57,
+			-56,
+			-52,
+			-49,
+			-48,
+			-47,
+			-45,
+			-44,
+			-43,
+			-30,
+			-28,
+			-1,
+            1
+        ]
+    },
+    "lead": {
+        "template": "uniform",
+        "block": [
+            {"name": "IC2:blockOreLead", "metadata": 0, "weight": 32},
+            {"name": "ImmersiveEngineering:ore", "metadata": 2, "weight":32},
+			{"name": "Railcraft:ore", "metadata": 11, "weight":64},
+			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight": 32},
+			{"name": "bluepower:silver_ore", "metadata": 0, "weight":10},
+			{"name": "factorization:ResourceBlock", "metadata": 0, "weight":10},
+            {"name": "ImmersiveEngineering:ore", "metadata": 3, "weight":10},
+			{"name": "ThermalFoundation:Ore", "metadata": 2, "weight": 10}
+        ],
+        "clusterSize": 8,
+        "numClusters": 8,
+        "minHeight": 10,
+        "maxHeight": 35,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -60,
+			-58,
+			-57,
+			-56,
+			-52,
+			-49,
+			-48,
+			-47,
+			-45,
+			-44,
+			-43,
+			-30,
+			-28,
+			-1,
+            1
+        ]
+    },
+    "nickel": {
+        "template": "uniform",
+        "block": [
+			{"name": "ThermalFoundation:Ore", "metadata": 4, "weight":50},
+			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":50}
+		],
+        "clusterSize": 4,
+        "numClusters": 3,
+        "minHeight": 5,
+        "maxHeight": 20,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -60,
+			-56,
+			-53,
+			-52,
+			-49,
+			-48,
+			-46,
+			-45,
+			-44,
+			-43,
+			-30,
+			-29,
+			-28,
+			-1,
+            1
+        ]
+    },
+    "platinum": {
+        "template": "uniform",
+        "generator": "sparse-cluster",
+        "block": [
+            {"name": "ThermalFoundation:Ore", "metadata": 5, "weight": 80},
+            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 10},
+			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":10}
+        ],
+        "clusterSize": 3,
+        "numClusters": 1,
+        "minHeight": 5,
+        "maxHeight": 30,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -60,
+			-57,
+			-56,
+			-53,
+			-52,
+			-49,
+			-48,
+			-47,
+			-46,
+			-45,
+			-44,
+			-43,
+			-30,
+			-29,
+			-28,
+			-1,
+            1
+        ]
+    },
+    "copperHigh": {
+        "template": "uniform",
+        "block": [
+			{"name": "bluepower:copper_ore", "metadata": 0, "weight":50},
+			{"name": "Forestry:resources", "metadata": 1, "weight":50},
+			{"name": "GalacticraftCore:tile.gcBlockCore", "metadata": 5, "weight":50},
+			{"name": "IC2:blockOreCopper", "metadata": 0, "weight":50},
+			{"name": "ImmersiveEngineering:ore", "metadata": 0, "weight":50},
+			{"name": "TConstruct:SearedBrick", "metadata": 3, "weight":50},
+			{"name": "ThermalFoundation:Ore", "metadata": 0, "weight":50},
+			{"name": "Railcraft:ore", "metadata": 9, "weight":100}
+		],
+        "clusterSize": 8,
+        "numClusters": 8,
+        "minHeight": 48,
+        "maxHeight": 96,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -60,
+			-59,
+			-58,
+			-57,
+			-56,
+			-53,
+			-52,
+			-49,
+			-48,
+			-47,
+			-46,
+			-45,
+			-44,
+			-43,
+			-30,
+			-29,
+			-28,
+			-1,
+            1
+        ]
+    },
+	"platinumFronos": {
+        "template": "uniform",
+        "generator": "sparse-cluster",
+        "block": [
+            {"name": "ThermalFoundation:Ore", "metadata": 5, "weight": 80},
+            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 10},
+			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":10}
+        ],
+        "clusterSize": 5,
+        "numClusters": 4,
+        "minHeight": 5,
+        "maxHeight": 50,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            -57
+        ]
+    }
+}
