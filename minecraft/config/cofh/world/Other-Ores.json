@@ -40,7 +40,6 @@
         "template": "uniform",
         "block": [
 			{"name": "GalacticraftCore:tile.gcBlockCore", "metadata": 7, "weight": 50},
-            {"name": "ImmersiveEngineering:ore", "metadata": 1, "weight": 50},
 			{"name": "TConstruct:SearedBrick", "metadata": 5, "weight": 50}
         ],
         "material": "minecraft:stone",
@@ -470,40 +469,6 @@
             1
         ]
     },
-	"FactorizationDarkIron": {
-        "template": "uniform",
-        "block": "factorization:DarkIronOre",
-        "material": "minecraft:stone",
-        "clusterSize": 2,
-        "numClusters": 3,
-        "minHeight": 0,
-        "maxHeight": 10,
-        "retrogen": "true",
-        "biomeRestriction": "blacklist",
-        "biomes": [],
-        "dimensionRestriction": "blacklist",
-        "dimensions": [
-            -60,
-			-59,
-			-58,
-			-57,
-			-56,
-			-53,
-			-52,
-			-49,
-			-48,
-			-47,
-			-46,
-			-45,
-			-44,
-			-43,
-			-30,
-			-29,
-			-28,
-			-1,
-            1
-        ]
-    },
 	"ForestryApatite": {
         "template": "uniform",
         "block": "Forestry:resources",
@@ -546,72 +511,6 @@
         "numClusters": 7,
         "minHeight": 16,
         "maxHeight": 48,
-        "retrogen": "true",
-        "biomeRestriction": "blacklist",
-        "biomes": [],
-        "dimensionRestriction": "blacklist",
-        "dimensions": [
-            -60,
-			-59,
-			-58,
-			-57,
-			-56,
-			-53,
-			-52,
-			-49,
-			-48,
-			-47,
-			-46,
-			-45,
-			-44,
-			-43,
-			-30,
-			-29,
-			-28,
-			-1,
-            1
-        ]
-    },
-	"MimicryMimichiteEnd": {
-        "template": "uniform",
-        "block": {"name": "Mimicry:Sparr_Mimichite Ore", "metadata": 2},
-        "material": "minecraft:end_stone",
-        "clusterSize": 1,
-        "numClusters": 32,
-        "minHeight": 1,
-        "maxHeight": 128,
-        "retrogen": "true",
-        "biomeRestriction": "blacklist",
-        "biomes": [],
-        "dimensionRestriction": "whitelist",
-        "dimensions": [
-			1
-		]
-    },
-	"MimicryMimichiteNether": {
-        "template": "uniform",
-        "block": {"name": "Mimicry:Sparr_Mimichite Ore", "metadata": 1},
-        "material": "minecraft:netherrack",
-        "clusterSize": 1,
-        "numClusters": 16,
-        "minHeight": 1,
-        "maxHeight": 128,
-        "retrogen": "true",
-        "biomeRestriction": "blacklist",
-        "biomes": [],
-        "dimensionRestriction": "whitelist",
-        "dimensions": [
-			-1
-		]
-    },
-	"MimicryMimichiteOverworld": {
-        "template": "uniform",
-        "block": "Mimicry:Sparr_Mimichite Ore",
-        "material": "minecraft:stone",
-        "clusterSize": 1,
-        "numClusters": 8,
-        "minHeight": 1,
-        "maxHeight": 16,
         "retrogen": "true",
         "biomeRestriction": "blacklist",
         "biomes": [],
@@ -1128,8 +1027,7 @@
         "template": "uniform",
         "block": [
             {"name": "BigReactors:YelloriteOre", "metadata": 0, "weight": 60},
-            {"name": "IC2:blockOreUran", "metadata": 0, "weight": 20},
-			{"name": "minechem:tile.oreUranium", "metadata": 0, "weight": 20}
+            {"name": "IC2:blockOreUran", "metadata": 0, "weight": 40}
         ],
         "clusterSize": 3,
         "numClusters": 6,

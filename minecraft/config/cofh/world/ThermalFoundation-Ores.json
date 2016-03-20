@@ -6,7 +6,6 @@
 			{"name": "Forestry:resources", "metadata": 1, "weight":50},
 			{"name": "GalacticraftCore:tile.gcBlockCore", "metadata": 5, "weight":50},
 			{"name": "IC2:blockOreCopper", "weight":50},
-			{"name": "ImmersiveEngineering:ore", "weight":50},
 			{"name": "TConstruct:SearedBrick", "metadata": 3, "weight":50},
 			{"name": "ThermalFoundation:Ore", "weight":50},
 			{"name": "Railcraft:ore", "metadata": 9, "weight":100}
@@ -84,15 +83,11 @@
     "silver": {
         "template": "uniform",
         "block": [
-            {"name": "bluepower:silver_ore", "metadata": 0, "weight":50},
-			{"name": "factorization:ResourceBlock", "metadata": 0, "weight":50},
-            {"name": "ImmersiveEngineering:ore", "metadata": 3, "weight":50},
-			{"name": "ThermalFoundation:Ore", "metadata": 2, "weight":50},
+            {"name": "bluepower:silver_ore", "metadata": 0, "weight":80},
+			{"name": "ThermalFoundation:Ore", "metadata": 2, "weight":80},
 			{"name": "IC2:blockOreLead", "metadata": 0, "weight":10},
-			{"name": "ImmersiveEngineering:ore", "metadata": 2, "weight":10},
 			{"name": "Railcraft:ore", "metadata": 11, "weight":20},
-			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight":10}
-			
+			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight":10}			
         ],
         "clusterSize": 8,
         "numClusters": 6,
@@ -125,13 +120,10 @@
     "lead": {
         "template": "uniform",
         "block": [
-            {"name": "IC2:blockOreLead", "metadata": 0, "weight": 32},
-            {"name": "ImmersiveEngineering:ore", "metadata": 2, "weight":32},
-			{"name": "Railcraft:ore", "metadata": 11, "weight":64},
-			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight": 32},
+            {"name": "IC2:blockOreLead", "metadata": 0, "weight": 20},
+            {"name": "Railcraft:ore", "metadata": 11, "weight":40},
+			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight": 20},
 			{"name": "bluepower:silver_ore", "metadata": 0, "weight":10},
-			{"name": "factorization:ResourceBlock", "metadata": 0, "weight":10},
-            {"name": "ImmersiveEngineering:ore", "metadata": 3, "weight":10},
 			{"name": "ThermalFoundation:Ore", "metadata": 2, "weight": 10}
         ],
         "clusterSize": 8,
@@ -165,8 +157,7 @@
     "nickel": {
         "template": "uniform",
         "block": [
-			{"name": "ThermalFoundation:Ore", "metadata": 4, "weight":50},
-			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":50}
+			{"name": "ThermalFoundation:Ore", "metadata": 4}
 		],
         "clusterSize": 4,
         "numClusters": 3,
@@ -201,8 +192,7 @@
         "generator": "sparse-cluster",
         "block": [
             {"name": "ThermalFoundation:Ore", "metadata": 5, "weight": 80},
-            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 10},
-			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":10}
+            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 20}
         ],
         "clusterSize": 3,
         "numClusters": 1,
@@ -241,7 +231,6 @@
 			{"name": "Forestry:resources", "metadata": 1, "weight":50},
 			{"name": "GalacticraftCore:tile.gcBlockCore", "metadata": 5, "weight":50},
 			{"name": "IC2:blockOreCopper", "metadata": 0, "weight":50},
-			{"name": "ImmersiveEngineering:ore", "metadata": 0, "weight":50},
 			{"name": "TConstruct:SearedBrick", "metadata": 3, "weight":50},
 			{"name": "ThermalFoundation:Ore", "metadata": 0, "weight":50},
 			{"name": "Railcraft:ore", "metadata": 9, "weight":100}
@@ -283,8 +272,7 @@
         "generator": "sparse-cluster",
         "block": [
             {"name": "ThermalFoundation:Ore", "metadata": 5, "weight": 80},
-            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 10},
-			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":10}
+            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 20}
         ],
         "clusterSize": 5,
         "numClusters": 4,
